@@ -20,8 +20,11 @@ fi
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 export CLICOLOR=1
 
-# Doesn't work with BSD ls
-# alias ls='ls --color=auto' 
+# Doesn't work with the BSD ls on macOS
+ls --color=auto &> /dev/null
+if [[ $? == 0 ]]; then
+  alias ls='ls --color=auto'
+fi
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
