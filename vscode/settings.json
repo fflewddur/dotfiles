@@ -1,9 +1,21 @@
 {
     "workbench.startupEditor": "newUntitledFile",
     "editor.fontFamily": "Hack, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "workbench.iconTheme": "eq-material-theme-icons-darker",
-    "workbench.colorTheme": "Material Theme Darker",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Dark+ Material",
     "editor.minimap.enabled": false,
     "editor.wordWrap": "on",
-    "git.autofetch": true
+    "git.autofetch": true,
+    "todo-tree.tree.showScanModeButton": false,
+    "window.zoomLevel": 1,
+    "go.useLanguageServer": true,
+    "go.coverOnSave": true,
+    "go.coverageDecorator": {
+        "type": "gutter",
+        "coveredHighlightColor": "rgba(64,128,128,0.5)",
+        "uncoveredHighlightColor": "rgba(128,64,64,0.25)",
+        "coveredGutterStyle": "blockgreen",
+        "uncoveredGutterStyle": "blockred"
+    },
+    "go.coverOnSingleTest": true
 }
