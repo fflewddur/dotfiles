@@ -43,7 +43,7 @@ fi
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='emacs'
   PROMPT='
-%F{magenta}%n@%m%f %F{blue}[%~]%f
+%F{magenta}%n@%M%f %F{blue}[%~]%f
 %B%(!.#.%(?.λ.%F{red}λ%f))%b '
 else
   export EDITOR='code -w'
