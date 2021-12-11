@@ -9,6 +9,17 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
+# Add Homebrew to path, if found
+if [[ -d "/opt/homebrew/bin/" ]]; then
+  PATH="$PATH:/opt/homebrew/bin/"
+fi
+
+# Source Homebrew shell completions
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+fi
+
 # Use modern completion system
 autoload -Uz compinit
 compinit
